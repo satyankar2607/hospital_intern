@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>doctor</title>
+</head>
+<body>
+<h1 align = "center">DOCTOR</h1>
+
+<p align ="center">
+        {% for i in message %}
+            Name = {{i.f_name}} {{i.l_name}}<br><br>
+            Pictue = {{i.picture}}<br><br>
+            Usename = {{i.username}}<br><br>
+            Email ID = {{i.emailed}}<br><br>
+            Password = {{i.pwd}}<br><br>
+            Address = {{i.address}}<br><br>
+
+        {% endfor %}
+
+</p>
+</body>
+</html>

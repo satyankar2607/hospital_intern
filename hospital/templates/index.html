@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>REGISTER</h1>
+
+<form action = '/signup' method = 'post'>{% csrf_token %}
+    First name:
+    <input id="fname" name="fname" placeholder="First name" type="text">
+    <br>
+    <br>
+    Last name:
+    <input id="lname" name="lname" placeholder="Last name" type="text">
+    <br>
+    <br>
+    Address:
+    <input id="address" name="address" placeholder="Address" type="text">
+    <br>
+    <br>
+    Username:
+    <input id="username" name="username" placeholder="User name" type="text">
+    <br>
+    <br>
+    Email ID:
+    <input type="email" name="email" id="email" placeholder="Email ID" >
+    <br>
+    <br>
+    Password:
+    <input type="password" name="pwd" id="pwd" placeholder="Password">
+    <br>
+    <br>
+    Confirm Password:
+    <input id="cnf_pwd" name="cnf_pwd" placeholder="Password" type="password">
+    <br>
+    <br>
+    Profile picture:
+    <input id="picture" name="picture" type="file"  accept="image/*" >
+    <br>
+    <br>
+
+    Type of user:
+    <input type="radio" name="entity" id="entity" value = "doctor">doctor
+    <input type="radio" name="entity" id="entity" value = "patient">patient<br><br>
+
+    <button type = 'submit'> Register! </button>
+    <br>
+</form>
+<br><br>
+<h3>
+<nav>
+    (Existing User):
+    <b><a href="/login">LOGIN!</a></b>
+</nav>
+    </h3>
+</body>
+</html>
